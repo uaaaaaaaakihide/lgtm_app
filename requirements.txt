@@ -1,0 +1,4 @@
+Click==7.0
+Pillow
+requests==2.22.0
+
