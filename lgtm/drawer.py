@@ -10,7 +10,8 @@ FONT_MIN_SIZE = 24
 # フォントの格納先のパスは十応環境に合わせて変更する
 # FONT_NAME = '/Library/Fonts/Arial Bold.ttf'
 # FONT_NAME = 'C:\\Windows\\Fonts\\azuki.ttf'
-FONT_NAME = '/mnt/c/Windows/Fonts/azuki.ttf'
+# FONT_NAME = '/mnt/c/Windows/Fonts/azuki.ttf'
+FONT_NAME = './fonts/AZUKI.TTF'
 
 FONT_COLOR_WHITE = (255, 255, 255, 0)
 
