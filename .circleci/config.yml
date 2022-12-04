@@ -2,8 +2,8 @@ version: 2
 jobs:
   setup_dependencies:
     docker:
-      # - image: circleci/python3.9.2
-      - image: cimg/python3.9.2
+      # - image: circleci/python:3.9.2
+      - image: cimg/python:3.9.2
     steps:
       - checkout
       - restore_cache:
@@ -17,7 +17,8 @@ jobs:
             - "~/.local"
   test:
     docker:
-      - image: circleci/python:3.9.2
+      # - image: circleci/python:3.9.2
+      - image: cimg/python:3.9.2
     steps:
       - checkout
       - restore_cache:
