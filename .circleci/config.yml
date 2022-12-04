@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   setup_dependencies:
     docker:
@@ -23,8 +23,8 @@ jobs:
       - restore_cache:
           key: deps-{{ checksum "requirements.lock" }}
       - run:
-        command: |
-          python -m unittest -v
+          command: |
+            python3 -m unittest -v
 workflows:
   version: 2
   all:
