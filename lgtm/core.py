@@ -1,5 +1,6 @@
 import click
-
+from lgtm.drawer import save_with_message
+from lgtm.image_source import get_image
 @click.command()
 @click.option('--message', '-m', default='LGTM',
               show_default=True, help='Oracle画像です')
@@ -11,4 +12,6 @@ def cli(keyword, message):
 
 def lgtm(keyword, message):
     # ここにロジックを追加していく
-    pass
+    # pass
+    with get_image(keyword) as fp:
+        save_with_message(fp, message)
